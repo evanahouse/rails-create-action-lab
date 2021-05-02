@@ -1,1 +1,10 @@
-<!-- Create your form here -->
+<h1>Student Form</h1>
+<%= form_tag students_path do %>
+    <label>First Name:</label><br>
+    <div><%= text_field_tag :first_name %></div>
+
+    <label>Last Name:</label><br>
+    <div><%= text_field_tag :last_name %></div>
+
+    <div><%= submit_tag "Submit Student" %></div>
+<% end %>
